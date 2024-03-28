@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Employer Info</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="navbar-bg">
+            <p>Employement Agency</p>
+            <div id="navSidePanel" class="navbar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="employee.html">My Profile</a>
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="">Log In</a>
+                <a href="signup.html">Sign Up</a>
+                <a href="about.html">About</a>
+            </div>
+            <button class="openbtn" onclick="openNav()">☰</button>
+        </div>
+        <div class="container">
+            <fieldset>
+                <label>Ονοματεπώνυμο<br>
+                    <input type="text" id="firstname" name="onoma" placeholder="First Name" readonly>
+                    <input type="text" id="lastname" name="eponimo" placeholder="Last Name" readonly>
+                </label>
+
+                <label>Στοιχεία επικοινωνίας<br>
+                    <input type="email" id="mail" name="user_mail" placeholder="Email" readonly>
+                    <input type="tel" id="phone1" name="user_phone1" placeholder="Phone 1" readonly>
+                    <input type="tel" id="phone2" name="user_phone2" placeholder="Phone 2" readonly>
+                </label>
+
+                <label>Στοιχεία Διεύθυνσης<br>
+                    <input type="text" id="textbox3" name="diefthinsi" placeholder="Address" readonly>
+                    <input type="text" id="region" name="perioxh" placeholder="Region" readonly>
+
+                </label>
+                <button class="card-button" id="tropopoihsh" value="edit">Τροποποίηση</button>
+                <button class="card-button" id="nea_aggelia" value="insert_value">Νέα Αγγελία</button>
+                <img src="static/job_default_logo.jpg" alt="User Image" class="user_image">
+
+                </form>
+            </fieldset>
+
+            <fieldset>
+
+                <div class="cards">
+                    <div class="card">
+                        <img src="static/job_default_logo.jpg" alt="Description" class="card-image">
+                        <div class="card-content">
+                            <h2 class="card-title">Αγγελία 1</h2>
+                            <hr>
+                            <p class="card-description">This is a description for Card 1.</p>
+                        </div>
+                        <button class="card-button" value="delete">Delete</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="static/job_default_logo.jpg" alt="Description" class="card-image">
+                        <div class="card-content">
+                            <h2 class="card-title">Αγγελία 2</h2>
+                            <hr>
+                            <p class="card-description">This is a description for Card 1.1</p>
+                        </div>
+                        <button class="card-button" value="delete">Delete</button>
+                    </div>
+            </fieldset>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2024 Kiokakis Christos Korda Evaggelia<br>Electrical and Computer Engineering Department<br>
+            University of Patras</p>
+        <script src="script.js"></script>
+    </footer>
+
+</body>
+
+</html>
