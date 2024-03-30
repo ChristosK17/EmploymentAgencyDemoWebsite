@@ -24,56 +24,98 @@
             </div>
             <button class="openbtn" onclick="openNav()">☰</button>
         </div>
-        <div class="container">
-            <fieldset>
-                <label>Ονοματεπώνυμο<br>
-                    <input type="text" id="firstname" name="onoma" placeholder="First Name" readonly>
-                    <input type="text" id="lastname" name="eponimo" placeholder="Last Name" readonly>
-                </label>
+            <div class="profile_container">
+                <div class="profile">
+                    <img src="static/job_default_logo.jpg" alt="Description" class="profile_image">
+                    <div class="profile_info">
+                        <fieldset>
+                            <legend>Firstname</legend>
+                            <p>{firstname}</p>
+                          </fieldset>
+                          <fieldset>
+                            <legend>Lastname</legend>
+                            <p>{lastname}</p>
+                          </fieldset>
+                          <fieldset>
+                            <legend>Email</legend>
+                            <p>{email}</p>
+                          </fieldset>
+                          <fieldset>
+                            <legend>Phone1</legend>
+                            <p>{phone1}</p>
+                          </fieldset>
+                          <fieldset>
+                            <legend>Phone2</legend>
+                            <p>{phone2}</p>
+                          </fieldset>
+                          <fieldset>
+                            <legend>Address</legend>
+                            <p>{address}</p>
+                          </fieldset>
+                          <fieldset>
+                            <legend>Region</legend>
+                            <p>{region}</p>
+                          </fieldset>
+                          <fieldset>
+                            <legend>Company Name</legend>
+                            <p>{comp_name}</p>
+                          </fieldset>
+                          <fieldset>
+                            <legend>Company Description</legend>
+                            <p>{comp_desc}</p>
+                          </fieldset>
+                    </div>
+                    <div class="profile_buttons">
+                        <button class="profile-button" type="submit" value="upload_image" />Upload Image</button>
+                        <button class="profile-button" type="submit" value="add_job" />Add job</button>
+                        <button class="profile-button" type="submit" value="Edit" />Edit</button>
+                    </div>
+                </div>
 
-                <label>Στοιχεία επικοινωνίας<br>
-                    <input type="email" id="mail" name="user_mail" placeholder="Email" readonly>
-                    <input type="tel" id="phone1" name="user_phone1" placeholder="Phone 1" readonly>
-                    <input type="tel" id="phone2" name="user_phone2" placeholder="Phone 2" readonly>
-                </label>
-
-                <label>Στοιχεία Διεύθυνσης<br>
-                    <input type="text" id="textbox3" name="diefthinsi" placeholder="Address" readonly>
-                    <input type="text" id="region" name="perioxh" placeholder="Region" readonly>
-
-                </label>
-                <button class="card-button" id="tropopoihsh" value="edit">Τροποποίηση</button>
-                <button class="card-button" id="nea_aggelia" value="insert_value">Νέα Αγγελία</button>
-                <img src="static/job_default_logo.jpg" alt="User Image" class="user_image">
-
-                </form>
-            </fieldset>
-
-            <fieldset>
+                <h2>Οι αγγελίες μου</h2>
 
                 <div class="cards">
                     <div class="card">
                         <img src="static/job_default_logo.jpg" alt="Description" class="card-image">
                         <div class="card-content">
-                            <h2 class="card-title">Αγγελία 1</h2>
+                            <h2 class="card-title">Card 1</h2>
                             <hr>
-                            <p class="card-description">This is a description for Card 1.</p>
+                            <p class="card-description">This is a description for Card 1.This is a description for Card
+                                1.This is a description for Card 1.This is a description for Card 1.This is a
+                                description for Card 1</p>
                         </div>
-                        <button class="card-button" value="delete">Delete</button>
+                        <div class="profile_buttons">
+                            <button class="profile-button" type="submit" value="edit" />Edit</button>
+                            <button class="profile-button" type="submit" value="delete" />Delete</button>
+                        </div>
                     </div>
 
                     <div class="card">
                         <img src="static/job_default_logo.jpg" alt="Description" class="card-image">
                         <div class="card-content">
-                            <h2 class="card-title">Αγγελία 2</h2>
+                            <h2 class="card-title">Card 2</h2>
                             <hr>
-                            <p class="card-description">This is a description for Card 1.1</p>
+                            <p class="card-description">This is a description for Card 2.</p>
                         </div>
-                        <button class="card-button" value="delete">Delete</button>
+                        <div class="profile_buttons">
+                            <button class="profile-button" type="submit" value="edit" />Edit</button>
+                            <button class="profile-button" type="submit" value="delete" />Delete</button>
+                        </div>
                     </div>
-            </fieldset>
-        </div>
 
+                    <div class="card">
+                        <img src="static/job_default_logo.jpg" alt="Description" class="card-image">
+                        <div class="card-content">
+                            <h2 class="card-title">Card 3</h2>
+                            <hr>
+                            <p class="card-description">This is a description for Card 3.</p>
+                        </div>
+                        <div class="profile_buttons">
+                            <button class="profile-button" type="submit" value="edit" />Edit</button>
+                            <button class="profile-button" type="submit" value="delete" />Delete</button>
+                        </div>
+                    </div>
+                </div>
     </main>
 
     <footer>
