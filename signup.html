@@ -2,86 +2,99 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <title>Sign Up</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="/static/logo-icon.ico">
+  <title>Log In</title>
 </head>
 
 <body>
 
-    <main>
-        <div class="navbar-bg">
-            <p>Employement Agency</p>
-            <div id="navSidePanel" class="navbar">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <a href="/">Home</a>
-                <a href="jobs.html">Jobs</a>
-                <a href="employee.html">Employee</a>
-                <a href="employer.html">Employer</a>
-                <a href="about.html">About</a>
-                <a href="signup.html" class="navbar-bottom">Log In</a>
+  <main>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <img src="static/logo.png" alt="Logo" style="width: 200px;">
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between " id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/jobs.html">Jobs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/employee.html">Employee</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/employer.html">Employer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link" href="/login.html">Log In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="vh-50" style="background-color: #e7e9ee;">
+      <div class="container py-5 h-50">
+        <div class="row d-flex justify-content-center align-items-center h-50">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card shadow-2-strong" style="border-radius: 1rem;">
+              <div class="card-body p-5 text-center" style="background-color: #ffffff;">
+
+                <h3 class="mb-5">Sign up</h3>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="typeEmailX-2">Email</label>
+                  <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="typePasswordX-2">Password</label>
+                  <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
+                </div>
+
+                <div class="form-check d-flex justify-content-start mb-4">
+                  <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                  <label class="form-check-label" for="form1Example3"> Remember password </label>
+                </div>
+
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+
+                <br>
+                <br>
+
+                <a href="/login.html" class="text-muted">Registered? Log In!</a>
+
+              </div>
             </div>
-            <button class="openbtn" onclick="openNav()">☰</button>
+          </div>
         </div>
-        <div>
-            <h1>Sign Up</h1>
-            <form method="post">
-                <legend>Στοιχεία φοιτητή</legend>
-                <p>Συμπληρώστε τα στοιχεία σας με ελληνικούς χαρακτήρες</p>
-                <label>Ονοματεπώνυμο<br>
-                    <input name="name" type="text" placeholder="Όνομα" />
-                    <input name="surname" type="text" placeholder="Επώνυμο" />
-                </label>
-                <br>
-                <br>
-                <label>Στοιχεία διεύθυνσης<br>
-                    <input name="address" type="text" placeholder="Οδός και αριθμός" style="width: 430px" />
-                    <br>
-                    <input name="town" type="text" placeholder="Πόλη" />
-                    <input name="zipcode" type="text" placeholder="Ταχυδρομικός κώδικας" />
-                </label>
-                <br>
-                <br>
-                <label>Στοιχεία επικοινωνίας<br>
-                    <input name="phone" type="number" placeholder="Τηλέφωνο" />
-                    <input name="email" type="email" placeholder="Διεύθυνση μέιλ" />
-                </label>
-                <br>
-                <br>
-                <label class="radio-group">Έτος σπουδών
-                    <input type="radio" id="radioA" name="year_option" value="A">
-                    <label for="radioA">Α</label>
+      </div>
+    </section>
+  </main>
 
-                    <input type="radio" id="radioB" name="year_option" value="B">
-                    <label for="radioB">Β</label>
+  <footer>
+    <div class="footer">
+      <p>Created by Kiokakis Christos and Korda Evaggelia - ECE UP</p>
+    </div>
 
-                    <input type="radio" id="radioC" name="year_option" value="C">
-                    <label for="radioC">Γ</label>
-
-                    <input type="radio" id="radioD" name="year_option" value="D">
-                    <label for="radioD">Δ</label>
-
-                    <input type="radio" id="radioE" name="year_option" value="E">
-                    <label for="radioE">Ε</label>
-                </label>
-                <br>
-                <br>
-                <label>Αριθμός μητρόου<br>
-                    <input name="id" type="number" placeholder="1050505" />
-                </label>
-
-                <br>
-                <button class="simple-button" type="submit" value="Υποβολή" />Υποβολή</button>
-            </form>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; Copyright 2024 Kiokakis Christos Korda Evaggelia<br>Electrical and Computer Engineering Department<br>
-            University of Patras</p>
-        <script src="script.js"></script>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </footer>
 
 </body>
 
